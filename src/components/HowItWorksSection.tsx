@@ -2,48 +2,46 @@ import { motion } from "framer-motion";
 import { Target, SlidersHorizontal, Sparkles } from "lucide-react";
 
 const steps = [
-  { icon: Target, step: "01", title: "Escolha a ponteira", desc: "Selecione entre 6 cabeças a ideal para sua dor." },
-  { icon: SlidersHorizontal, step: "02", title: "Ajuste a intensidade", desc: "30 níveis de potência para controle total." },
-  { icon: Sparkles, step: "03", title: "Sinta o alívio", desc: "Deslize sobre o músculo e sinta a liberação imediata." },
+  { icon: Target, step: "01", title: "Escolha a ponteira", desc: "Use a cabeça ideal para cada região e tipo de tensão." },
+  { icon: SlidersHorizontal, step: "02", title: "Ajuste a intensidade", desc: "Controle a força com facilidade, sem complicação." },
+  { icon: Sparkles, step: "03", title: "Aplique e alivie", desc: "Passe sobre a área dolorida por alguns minutos e sinta a diferença." },
 ];
 
 const HowItWorksSection = () => (
-  <section className="py-20 md:py-28 bg-background">
+  <section className="py-16 md:py-24">
     <div className="container px-4">
-      <motion.h2
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-16"
+        className="mb-12 text-center"
       >
-        Simples assim.
-      </motion.h2>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Como funciona</p>
+        <h2 className="mt-4 font-display text-3xl font-semibold text-foreground md:text-4xl">
+          Três passos, sem esforço.
+        </h2>
+      </motion.div>
 
-      <div className="relative max-w-3xl mx-auto">
-        {/* Dotted line connector */}
-        <div className="hidden md:block absolute top-24 left-[16.6%] right-[16.6%] border-t-2 border-dashed border-primary/20" />
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {steps.map((s, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="flex flex-col items-center text-center"
-            >
-              <div className="relative w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-5 z-10">
-                <s.icon className="w-8 h-8 text-primary" />
-                <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center font-display">
-                  {s.step}
-                </span>
+      <div className="relative mx-auto grid max-w-5xl gap-4 lg:grid-cols-3">
+        {steps.map((s, i) => (
+          <motion.div
+            key={s.step}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.12 }}
+            className="rounded-[2rem] border border-border/70 bg-card/80 p-6 text-left shadow-card backdrop-blur-sm md:p-7"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex h-12 w-12 items-center justify-center rounded-[1rem] bg-secondary shadow-card">
+                <s.icon className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="font-display font-bold text-foreground text-lg">{s.title}</h3>
-              <p className="text-sm text-muted-foreground font-body mt-2 max-w-xs">{s.desc}</p>
-            </motion.div>
-          ))}
-        </div>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">{s.step}</span>
+            </div>
+            <h3 className="mt-8 font-display text-2xl font-semibold text-foreground">{s.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+          </motion.div>
+        ))}
       </div>
     </div>
   </section>
