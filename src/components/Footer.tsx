@@ -1,8 +1,10 @@
 const Footer = () => (
-  <footer className="py-8 bg-dark text-dark-foreground/50 border-t border-foreground/5">
-    <div className="container px-4 text-center">
-      <p className="font-display font-bold text-dark-foreground text-lg tracking-tighter">COVIA</p>
-      <p className="text-xs mt-2 font-body">© {new Date().getFullYear()} COVIA. Todos os direitos reservados.</p>
+  <footer className="pb-10 pt-6">
+    <div className="container px-4">
+      <div className="rounded-[2rem] border border-border/70 bg-card/80 px-6 py-8 text-center shadow-card backdrop-blur-sm">
+        <p className="font-display text-lg font-semibold uppercase tracking-[0.24em] text-foreground">COVIA</p>
+        <p className="mt-2 text-sm text-muted-foreground">© {new Date().getFullYear()} COVIA. Todos os direitos reservados.</p>
+      </div>
     </div>
   </footer>
 );

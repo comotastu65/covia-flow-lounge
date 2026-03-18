@@ -2,38 +2,41 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { motion } from "framer-motion";
 
 const faqs = [
-  { q: "A pistola de massagem realmente funciona?", a: "Sim! A COVIA utiliza terapia percussiva, clinicamente comprovada para aliviar dores musculares, melhorar a circulação e acelerar a recuperação. Milhares de atletas e profissionais já comprovaram os resultados." },
-  { q: "É seguro usar em casa?", a: "Totalmente seguro. A COVIA possui 30 níveis de intensidade ajustáveis, permitindo que você controle a pressão. É projetada para uso doméstico com proteção contra superaquecimento." },
-  { q: "Quanto tempo devo usar por sessão?", a: "Recomendamos de 1 a 2 minutos por grupo muscular, totalizando 10 a 15 minutos por sessão. É suficiente para sentir alívio profundo." },
-  { q: "Tem garantia?", a: "Sim, oferecemos garantia incondicional de 30 dias. Se não ficar satisfeito, devolvemos seu dinheiro sem burocracia." },
-  { q: "A bateria dura quanto tempo?", a: "A bateria de íon-lítio da COVIA dura até 4 horas de uso contínuo em uma única carga. Ideal para levar em viagens." },
+  { q: "A pistola de massagem realmente funciona?", a: "Sim. A terapia percussiva ajuda a aliviar tensão muscular, melhorar a sensação de relaxamento e apoiar a recuperação após esforço físico." },
+  { q: "É seguro usar em casa?", a: "Sim. A COVIA foi pensada para uso doméstico, com ajuste de intensidade para você adaptar a aplicação ao seu conforto." },
+  { q: "Quanto tempo devo usar por sessão?", a: "Em geral, 1 a 2 minutos por grupo muscular já são suficientes para sentir alívio e relaxamento." },
+  { q: "Tem garantia?", a: "Sim, oferecemos garantia de 30 dias para você testar com mais tranquilidade." },
+  { q: "A bateria dura quanto tempo?", a: "A bateria oferece autonomia para várias sessões ao longo da rotina, sem precisar recarregar o tempo todo." },
 ];
 
 const FAQSection = () => (
-  <section className="py-20 md:py-28 bg-muted">
+  <section className="py-16 md:py-24">
     <div className="container px-4">
-      <motion.h2
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-14"
+        className="mb-12 text-center"
       >
-        Dúvidas Frequentes
-      </motion.h2>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">FAQ</p>
+        <h2 className="mt-4 font-display text-3xl font-semibold text-foreground md:text-4xl">
+          Dúvidas frequentes
+        </h2>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="max-w-2xl mx-auto"
+        className="mx-auto max-w-3xl"
       >
-        <Accordion type="single" collapsible className="space-y-3">
+        <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, i) => (
-            <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-2xl shadow-card border-0 px-6 overflow-hidden">
-              <AccordionTrigger className="font-display font-bold text-foreground text-left hover:no-underline py-5">
+            <AccordionItem key={i} value={`faq-${i}`} className="overflow-hidden rounded-[1.8rem] border border-border/70 bg-card/85 px-6 shadow-card backdrop-blur-sm">
+              <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground font-body pb-5">
+              <AccordionContent className="pb-5 font-body text-sm leading-relaxed text-muted-foreground">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

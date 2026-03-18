@@ -4,8 +4,8 @@ import productImg from "@/assets/covia-product.jpg";
 import demoVideo from "@/assets/covia-demo.mp4";
 
 const features = [
-  { icon: Volume2, title: "Silenciosa", desc: "Uso confortável em casa, no pós-treino ou no fim de um dia intenso." },
-  { icon: Disc3, title: "Cabeças intercambiáveis", desc: "Adapte a massagem para diferentes áreas com aplicação simples." },
+  { icon: Volume2, title: "Silenciosa", desc: "Use em casa, no pós-treino ou no fim de um dia intenso sem incômodo." },
+  { icon: Disc3, title: "Cabeças intercambiáveis", desc: "Ajuste a aplicação conforme a região do corpo e o tipo de tensão." },
   { icon: BatteryFull, title: "Bateria durável", desc: "Autonomia para várias sessões sem depender de recargas constantes." },
 ];
 
@@ -22,10 +22,10 @@ const SolutionSection = () => (
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Solução COVIA</p>
             <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-foreground text-balance md:text-4xl">
-              Uma experiência de recuperação mais bonita, prática e eficiente.
+              Recuperação prática para quem precisa de resultado sem complicação.
             </h2>
             <p className="mt-4 max-w-xl text-base text-muted-foreground text-pretty">
-              Em vez de uma estética pesada e técnica, a COVIA agora ganha uma apresentação mais sofisticada: superfícies claras, blocos bem definidos e vídeo demonstrativo integrado.
+              A COVIA combina potência, conforto e portabilidade para aliviar áreas tensas, acelerar a recuperação muscular e deixar o corpo mais leve ao longo do dia.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-3">

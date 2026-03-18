@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const pains = [
-  { number: "01", title: "Pós-treino pesado", desc: "Quando a dor muscular atrasa o próximo treino e rouba sua constância." },
+  { number: "01", title: "Pós-treino pesado", desc: "Quando a dor muscular atrasa o próximo treino e tira sua constância." },
   { number: "02", title: "Rotina intensa", desc: "Pescoço rígido, costas cansadas e ombros pesados depois de horas de trabalho." },
-  { number: "03", title: "Alívio caro e curto", desc: "Sessões pontuais ajudam, mas a tensão volta e o custo acumula." },
+  { number: "03", title: "Alívio caro e curto", desc: "Sessões pontuais ajudam, mas a tensão volta e o custo continua subindo." },
 ];
 
 const ProblemSection = () => (
@@ -17,12 +17,12 @@ const ProblemSection = () => (
           transition={{ duration: 0.6 }}
           className="rounded-[2rem] border border-border/70 bg-card/85 p-6 shadow-card backdrop-blur-sm md:p-8"
         >
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Onde a dor aparece</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">A dor do dia a dia</p>
           <h2 className="mt-5 font-display text-3xl font-semibold leading-tight text-foreground text-balance md:text-4xl">
-            Se o corpo trava, a rotina perde ritmo.
+            Seu corpo sente antes da sua agenda parar.
           </h2>
           <p className="mt-4 max-w-lg text-base text-muted-foreground text-pretty">
-            A referência visual pediu mais leveza, respiro e clareza — então esta seção agora apresenta a dor do cliente em blocos limpos, com leitura rápida e sensação premium.
+            Seja depois do treino, de um dia inteiro sentado ou de uma rotina puxada, a tensão muscular acumula e afeta energia, foco e desempenho.
           </p>
         </motion.div>
 
