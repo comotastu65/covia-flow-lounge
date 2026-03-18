@@ -18,17 +18,17 @@ const OfferSection = () => (
             </h2>
             <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-foreground">
               <Clock className="h-4 w-4 text-primary" />
-              Apenas 14 unidades restantes com frete grátis
+              Apenas 14 unidades restantes com entrega rápida
             </div>
           </div>
 
           <div className="rounded-[2rem] border border-border/70 bg-secondary/60 p-6 md:p-8">
-            <p className="text-sm text-muted-foreground line-through">De R$ 897,00</p>
+            <p className="text-sm text-muted-foreground line-through">De 15.000 Kz</p>
             <p className="mt-2 font-display text-5xl font-semibold text-foreground md:text-6xl">
-              R$ 497<span className="text-2xl md:text-3xl">,00</span>
+              10.000<span className="text-2xl md:text-3xl"> Kz</span>
             </p>
             <p className="mt-3 text-sm text-muted-foreground">
-              ou <span className="font-semibold text-foreground">12x de R$ 49,90</span> sem juros
+              Oferta válida para <span className="font-semibold text-foreground">Luanda e Icolo e Bengo</span>
             </p>
 
             <a
@@ -42,7 +42,7 @@ const OfferSection = () => (
 
             <div className="mt-6 flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
               <span className="inline-flex items-center gap-2"><Shield className="h-4 w-4 text-primary" /> Garantia de 30 dias</span>
-              <span className="inline-flex items-center gap-2"><Truck className="h-4 w-4 text-primary" /> Frete grátis</span>
+              <span className="inline-flex items-center gap-2"><Truck className="h-4 w-4 text-primary" /> Entrega rápida</span>
             </div>
           </div>
         </div>
