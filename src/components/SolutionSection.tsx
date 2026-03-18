@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Volume2, Disc3, BatteryFull } from "lucide-react";
-import heroImg from "@/assets/covia-hero.png";
+import { Volume2, Disc3, BatteryFull, PlayCircle } from "lucide-react";
+import productImg from "@/assets/covia-product.jpg";
+import demoVideo from "@/assets/covia-demo.mp4";
 
 const features = [
   { icon: Volume2, title: "Motor Ultra-Quiet", desc: "Potência sem o ruído. Treine e recupere em qualquer lugar." },
@@ -25,15 +26,44 @@ const SolutionSection = () => (
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="flex justify-center"
-        >
-          <img src={heroImg} alt="COVIA Massage Gun" className="w-64 md:w-80 drop-shadow-2xl" loading="lazy" />
-        </motion.div>
+      <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+        <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="flex justify-center rounded-[2rem] bg-card shadow-card p-6"
+          >
+            <img
+              src={productImg}
+              alt="Pistola de massagem COVIA com acessórios"
+              className="w-full max-w-sm drop-shadow-2xl"
+              loading="lazy"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="rounded-[2rem] bg-card shadow-card p-4 md:p-5"
+          >
+            <div className="flex items-center gap-2 text-sm font-display font-bold text-foreground mb-3">
+              <PlayCircle className="w-4 h-4 text-primary" />
+              <span>Veja a COVIA em ação</span>
+            </div>
+            <video
+              className="w-full rounded-[1.5rem] bg-muted"
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source src={demoVideo} type="video/mp4" />
+              O seu navegador não suporta vídeo em HTML5.
+            </video>
+          </motion.div>
+        </div>
 
         <div className="space-y-6">
           {features.map((feat, i) => (

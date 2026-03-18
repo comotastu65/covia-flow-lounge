@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import problemImg from "@/assets/covia-problem.jpg";
+import problemImg from "@/assets/covia-use.jpg";
 
 const pains = [
   { title: "Nódulos de tensão pós-treino?", desc: "Aquela dor que não passa e atrapalha seu próximo treino." },
