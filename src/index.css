@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,69 +6,81 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 36 24% 96%;
+    --foreground: 210 16% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 210 16% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 210 16% 18%;
 
-    --primary: 40 45% 55%;
+    --primary: 138 22% 63%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 36 18% 92%;
+    --secondary-foreground: 210 16% 18%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 30 14% 93%;
+    --muted-foreground: 210 10% 42%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 132 18% 90%;
+    --accent-foreground: 210 16% 18%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 40 45% 55%;
+    --border: 30 12% 86%;
+    --input: 30 12% 86%;
+    --ring: 138 22% 63%;
 
-    --radius: 0.5rem;
+    --radius: 1.5rem;
 
-    --dark-bg: 222 47% 11%;
-    --dark-fg: 210 40% 98%;
-    --gold: 40 45% 55%;
-    --gold-hover: 40 50% 48%;
+    --dark-bg: 210 16% 18%;
+    --dark-fg: 36 24% 96%;
+    --gold: 138 22% 63%;
+    --gold-hover: 138 18% 55%;
     --whatsapp: 142 70% 45%;
 
-    --shadow-card: 0 0 0 1px rgba(0,0,0,.03), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px rgba(0,0,0,.05);
-    --shadow-elevated: 0 4px 6px rgba(0,0,0,.04), 0 20px 40px rgba(0,0,0,.08);
+    --shadow-card: 0 1px 1px hsl(var(--foreground) / 0.04), 0 18px 40px hsl(var(--foreground) / 0.08);
+    --shadow-elevated: 0 4px 10px hsl(var(--foreground) / 0.05), 0 28px 80px hsl(var(--foreground) / 0.12);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 36 24% 96%;
+    --sidebar-foreground: 210 16% 18%;
+    --sidebar-primary: 138 22% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 132 18% 90%;
+    --sidebar-accent-foreground: 210 16% 18%;
+    --sidebar-border: 30 12% 86%;
+    --sidebar-ring: 138 22% 63%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    background-image:
+      radial-gradient(circle at top left, hsl(var(--primary) / 0.16), transparent 22%),
+      radial-gradient(circle at top right, hsl(var(--accent) / 0.9), transparent 24%),
+      linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
     letter-spacing: -0.04em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
   }
 }
 
@@ -76,15 +88,15 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .text-pretty {
     text-wrap: pretty;
   }
 }
 
-/* Pulse animation for CTA */
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 0 0 hsla(40, 45%, 55%, 0.4); }
-  50% { box-shadow: 0 0 0 12px hsla(40, 45%, 55%, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.28); }
+  50% { box-shadow: 0 0 0 12px hsl(var(--primary) / 0); }
 }
 
 .animate-pulse-gold {
