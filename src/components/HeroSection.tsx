@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Zap } from "lucide-react";
-import heroImg from "@/assets/covia-hero.png";
+import heroImg from "@/assets/covia-product.jpg";
 
 const HeroSection = () => {
   return (
@@ -46,7 +46,7 @@ const HeroSection = () => {
           >
             <img
               src={heroImg}
-              alt="COVIA Massage Gun - Pistola de massagem profissional"
+              alt="Pistola de massagem COVIA preta com detalhes dourados"
               className="w-full max-w-md md:max-w-lg drop-shadow-2xl"
               loading="eager"
             />
