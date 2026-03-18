@@ -5,12 +5,11 @@ const WhatsAppButton = () => (
     href="https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20COVIA"
     target="_blank"
     rel="noopener noreferrer"
-    className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-whatsapp flex items-center justify-center shadow-elevated hover:scale-110 transition-transform duration-200"
+    className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full border-4 border-background bg-whatsapp shadow-elevated transition-transform duration-200 hover:scale-105"
     aria-label="Fale conosco pelo WhatsApp"
   >
-    <MessageCircle className="w-7 h-7 text-background fill-background" />
-    {/* Notification badge */}
-    <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-destructive text-destructive-foreground text-[10px] font-bold flex items-center justify-center">
+    <MessageCircle className="h-7 w-7 fill-background text-background" />
+    <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-primary-foreground">
       1
     </span>
   </a>
