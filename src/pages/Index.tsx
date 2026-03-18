@@ -1,6 +1,5 @@
 import StickyHeader from "@/components/StickyHeader";
 import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -15,7 +14,6 @@ const Index = () => (
   <>
     <StickyHeader />
     <HeroSection />
-    <ProblemSection />
     <SolutionSection />
     <BenefitsSection />
     <HowItWorksSection />
