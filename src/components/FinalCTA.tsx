@@ -11,7 +11,7 @@ const FinalCTA = () => (
       >
         <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-dark-foreground/60">Último passo</p>
         <h2 className="mt-4 font-display text-3xl font-semibold text-balance md:text-5xl">
-          Quiero mais leveza no corpo e mais constância na rotina.
+          Quero mais leveza no corpo e mais constância na rotina.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-dark-foreground/70 md:text-base">
           Garanta sua COVIA agora e transforme dor, tensão e cansaço em uma recuperação simples e prática todos os dias.
