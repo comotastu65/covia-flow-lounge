@@ -17,7 +17,7 @@ const FinalCTA = () => (
           Garanta sua COVIA agora e transforme dor, tensão e cansaço em uma recuperação simples e prática todos os dias.
         </p>
         <a
-          href="https://wa.me/5511999999999?text=Quero%20eliminar%20minhas%20dores%20com%20a%20COVIA!"
+          href="https://wa.me/244955397803?text=Ol%C3%A1%2C%20estou%20interessada%20no%20Massageador%20Pistola%20da%20Covia%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20antes%20de%20poder%20comprar."
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-10 py-4 font-display text-base font-semibold text-primary-foreground animate-pulse-gold transition-transform duration-200 hover:scale-[1.02]"
